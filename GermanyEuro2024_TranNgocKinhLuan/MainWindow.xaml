@@ -1,0 +1,34 @@
+﻿<Window x:Class="GermanyEuro2024_TranNgocKinhLuan.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GermanyEuro2024_TranNgocKinhLuan"
+        mc:Ignorable="d"
+        Title="PE118801 - Main PE Management Window" Height="500" Width="800" FontFamily="Tahoma" FontSize="13" Background="#FFF2F184" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Achievements" Height="47" Margin="136,70,0,0" VerticalAlignment="Top" Width="163" Foreground="Blue" FontFamily="Tahoma" FontSize="13" HorizontalAlignment="Left" FontWeight="ExtraBold"/>
+        <Label Content="Player Name" Height="47" Margin="462,70,0,0" VerticalAlignment="Top" Width="163" Foreground="Blue" FontFamily="Tahoma" FontSize="13" HorizontalAlignment="Left" FontWeight="ExtraBold"/>
+        <TextBox x:Name="AchivementsTextBox" HorizontalAlignment="Left" Height="24" Margin="240,70,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="217" TextAlignment="Right" Foreground="Blue"/>
+        <TextBox x:Name="PlayerNameTextBox" HorizontalAlignment="Left" Height="24" Margin="563,70,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="218" TextAlignment="Right" Foreground="Blue" RenderTransformOrigin="0.531,0.513"/>
+        <DataGrid x:Name="FootballPlayerDataGrid" HorizontalAlignment="Left" Height="289" Margin="36,163,0,0" VerticalAlignment="Top" Width="568" AutoGenerateColumns="False" Loaded="FootballPlayerDataGrid_Loaded">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="PlayerId" Binding="{Binding PlayerId}" />
+                <DataGridTextColumn Header="PlayerName" Binding="{Binding PlayerName}" />
+                <DataGridTextColumn Header="Achievements" Binding="{Binding Achievements}" />
+                <DataGridTextColumn Header="Birthday" Binding="{Binding Birthday}" />
+                <DataGridTextColumn Header="OriginCountry" Binding="{Binding OriginCountry}" />
+                <DataGridTextColumn Header="Award" Binding="{Binding Award}" />
+                <DataGridTextColumn Header="FootballTeamId" Binding="{Binding FootballTeamId}" />
+                <DataGridTextColumn Header="TeamTitle" Binding="{Binding FootballTeam.TeamTitle}" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button x:Name="AddButton" Content="Create" HorizontalAlignment="Left" Height="39" Margin="628,169,0,0" VerticalAlignment="Top" Width="140" Click="AddButton_Click"  Background="Magenta" Foreground="White" FontWeight="ExtraBold"/>
+        <Button x:Name="QuitButton" Content="Quit" HorizontalAlignment="Left" Height="39" Margin="628,387,0,0" VerticalAlignment="Top" Width="140" Click="QuitButton_Click"  Background="Magenta" Foreground="White" FontWeight="ExtraBold"/>
+        <Button x:Name="DeleteButton" Content="Delete" HorizontalAlignment="Left" Height="39" Margin="628,308,0,0" VerticalAlignment="Top" Width="140" Click="DeleteButton_Click"  Background="Magenta" Foreground="White" FontWeight="ExtraBold"/>
+        <Button x:Name="UpdateButton" Content="Update" HorizontalAlignment="Left" Height="39" Margin="628,242,0,0" VerticalAlignment="Top" Width="140" Click="UpdateButton_Click"  Background="Magenta" Foreground="White" FontWeight="ExtraBold"/>
+        <Button x:Name="SearchButton" Content="Search" HorizontalAlignment="Left" Height="39" Margin="36,64,0,0" VerticalAlignment="Top" Width="75" Click="SearchButton_Click" FontWeight="ExtraBold" FontSize="14" Background="Magenta" Foreground="White"/>
+
+    </Grid>
+</Window>
