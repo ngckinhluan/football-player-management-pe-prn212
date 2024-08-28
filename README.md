@@ -18,7 +18,7 @@ This repository contains a desktop application designed for managing football pl
 - Login Screen.
 ![Image](./Screenshots/Screenshot%202024-08-27%20011524.png)
 - Main Screen
-![Image](./Screenshots/Screenshot%202024-08-27%20011825.png)
+![Image](./Screenshots/new.png)
 - Create / Update Screen.
 ![Image](./Screenshots/Screenshot%202024-08-27%20012041.png)
 
@@ -36,11 +36,11 @@ Ensure you have the following installed:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/book-management-system.git
+    git clone https://github.com/ngckinhluan/football-player-management-pe-prn212
     ```
 2. Navigate to the project directory:
     ```bash
-    cd book-management-system
+    cd GermanyEuro2024_TranNgocKinhLuan
     ```
 3. Restore dependencies:
     ```bash
